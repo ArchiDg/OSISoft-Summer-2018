@@ -3,8 +3,8 @@ This is the Main class that creates an instance of the MqttClient class with
 specified name, mqtt server address, port number and topic.
 """
 import time
-from Receiver.mqtt_receiver import MqttClient
-from mqtt_to_omf.send_type_message import SendTypeMessage
+from root.Receiver.mqtt_receiver import MqttClient
+from root.mqtt_to_omf.send_type_message import SendTypeMessage
 
 client_name = "receiver1"
 ip_address = "127.0.0.1"

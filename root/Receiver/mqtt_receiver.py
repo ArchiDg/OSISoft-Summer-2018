@@ -8,21 +8,20 @@ import paho.mqtt.client as mqtt
 import datetime
 import json
 import logging
-from log import Log    ### HOW TO INSTANTIATE THE LOG FILE
-                       ### MAKE CSV FILE
+### MAKE CSV FILE
                        ### HOW TO ADD CONFIG FILE
 
-from Sender.omf_sender import SendOmfMessageToEndpoint \
+from root.Sender.omf_sender import SendOmfMessageToEndpoint \
     as send_omf_message_to_endpoint
-from mqtt_to_omf.asset_data_message import CreateAssetMessage \
+from root.mqtt_to_omf.asset_data_message import CreateAssetMessage \
     as create_asset
-from mqtt_to_omf.asset_link_message import CreateAssetLinkMessage \
+from root.mqtt_to_omf.asset_link_message import CreateAssetLinkMessage \
     as asset_link
-from mqtt_to_omf.container_link_message import CreateContainerLinkMessage \
+from root.mqtt_to_omf.container_link_message import CreateContainerLinkMessage \
     as container_link
-from mqtt_to_omf.container_message import CreateContainerMessage \
+from root.mqtt_to_omf.container_message import CreateContainerMessage \
     as container_message
-from mqtt_to_omf.create_data_value_for_container import CreateDataValueForContainer \
+from root.mqtt_to_omf.create_data_value_for_container import CreateDataValueForContainer \
     as create_data_values
 
 
