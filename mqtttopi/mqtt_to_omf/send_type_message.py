@@ -3,7 +3,7 @@ Send the types messages to define the types of streams that will be sent.
 These types are referenced in all later messages
 Sends a JSON packet to define static and dynamic types
 """
-from root.Sender.omf_sender import SendOmfMessageToEndpoint as send_omf_message_to_endpoint
+from mqtttopi.Sender.omf_sender import SendOmfMessageToEndpoint as send_omf_message_to_endpoint
 
 
 class SendTypeMessage(object):
